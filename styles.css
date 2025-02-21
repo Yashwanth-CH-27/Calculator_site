@@ -1,0 +1,57 @@
+html{
+    background-color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,120px);
+    gap: 20px;
+    border: solid grey;
+    margin: 50px auto;
+    width: 580px;
+    justify-content: center;
+    background-color: rgba(44, 39, 39, 0.721);
+    padding: 20px;
+    border-radius: 20px;
+}
+.text-display{
+    grid-column: span 4;
+    height: 130px;
+    border-radius: 10px;
+    text-align: right;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.btn{
+    height: 70px;
+    border-radius: 10px;
+    background-color: grey;
+    font-size: 22px;
+    font-weight:bolder;
+    text-align: center;
+    color: white;
+}
+.operations{
+    background-color:rgba(255, 68, 0, 0.735);
+}
+.equals{
+    background-color: teal;
+}
+.clr{
+    background-color: red;
+}
+@media(max-width:580px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4,70px);
+        gap: 20px;
+        border: solid grey;
+        margin: 50px auto;
+        width: auto;
+        justify-content: center;
+        background-color: rgba(44, 39, 39, 0.721);
+        padding: 20px;
+        border-radius: 20px;
+    }
+}
